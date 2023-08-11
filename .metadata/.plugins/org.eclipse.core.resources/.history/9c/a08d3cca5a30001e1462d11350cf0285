@@ -1,0 +1,16 @@
+package com.klu.S67Spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class ClientMain {
+	
+	public ClientMain() {}
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext ap =new ClassPathXmlApplicationContext("beans.xml");
+		
+	}
+
+}

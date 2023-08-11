@@ -1,0 +1,23 @@
+package com.klu.S67Spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class ClientMain {
+	
+	public ClientMain() {}
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext ap =new ClassPathXmlApplicationContext("beans.xml");
+		
+		Student st = (Student)ap.getBean("stu");
+		st.setSname("Shanmukh");
+		st.setSno(2564);
+		
+		System.out.println("Student Name "+st.getSname());
+		System.out.println("Student No. "+st.getSno());
+		
+	}
+
+}
